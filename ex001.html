@@ -16,7 +16,14 @@
             new europeu = ['Itália', 'Irlanda', 'França'],
             new asiatico = ['China', 'Japão']
         ]
-        paises.sort();
+        paises.sort((a, b)) => {
+            if (a > b)
+                return -1;
+            if (a < b)
+                return 1;
+            return 0;
+        });
+        //paises.sort();
         console.log(paises);
     </script>
 </body>
