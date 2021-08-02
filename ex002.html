@@ -11,13 +11,29 @@
     <div id = "container"></div>
     
     <script>
-        var container = document.getElementById("container");
-        console.log(container);
-        var link = document.createElement("a");
-        var linktxt = document.createTextNode("meu link");
-        link.appendChild(linktxt);
-        container.appendChild(link);
+        var container = document.getElementById("container")
+        console.log(container)
+        var link = document.createElement("a")
+        var linktxt = document.createTextNode("meu link")
+        link.appendChild(linktxt)
+        container.appendChild(link)
         link.setAttribute("href","http://google.com")
+
+        var input = document.createElement("input")
+        input.setAttribute("id", "valor")
+        input.setAttribute("type", "valor")
+
+        var botao = document.createElement("button")
+        botao.addEventListener("click", () => console.log(this))
+        var botaoTxt = document.createTextNode("Enviar")
+        botao.appendChild(botaoTxt);
+
+        var divResultado = document.createElement("div")
+
+        container.appendChild(input)
+        container.appendChild(botao)
+        container.appendChild(divResultado)
+
     </script>
 </body>
 </html>
