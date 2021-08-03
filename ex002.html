@@ -23,12 +23,13 @@
         input.setAttribute("id", "valor")
         input.setAttribute("type", "valor")
 
+        var divResultado = document.createElement("div")
         var botao = document.createElement("button")
-        botao.addEventListener("click", () => console.log(this))
+        botao.addEventListener("click", () => divResultado.innerHTML = input.value)
         var botaoTxt = document.createTextNode("Enviar")
         botao.appendChild(botaoTxt);
 
-        var divResultado = document.createElement("div")
+        
 
         container.appendChild(input)
         container.appendChild(botao)
